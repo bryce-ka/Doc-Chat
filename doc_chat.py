@@ -18,7 +18,7 @@ from langchain_community.vectorstores import FAISS
 # Set API keys
 LANGSMITH_ENDPOINT="https://api.smith.langchain.com"
 os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
-os.environ["LANGSMITH_TRACING"] = "True"
+os.environ["LANGSMITH_TRACING"] = "true"
 os.environ["LANGSMITH_API_KEY"] = st.secrets["LANGSMITH_API_KEY"]
 os.environ["LANGSMITH_PROJECT"] = st.secrets["LANGSMITH_PROJECT"]
 
