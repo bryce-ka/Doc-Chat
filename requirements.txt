@@ -55,10 +55,9 @@ narwhals==1.34.1
 networkx==3.4.2
 nibabel==5.3.2
 nipype==1.10.0
-numpy @ file:///Users/runner/miniforge3/conda-bld/numpy_1707225640867/work/dist/numpy-1.26.4-cp311-cp311-macosx_11_0_arm64.whl#sha256=b62b8b824024855c3eb209bd45bfcf60bc9a11b94cbf9d5b7b25dc503021e672
-openai==1.72.0
+numpy 
 orjson==3.10.16
-packaging @ file:///home/conda/feedstock_root/build_artifacts/packaging_1733203243479/work
+packaging 
 pandas==2.2.3
 pathlib==1.0.1
 pillow==11.2.1
