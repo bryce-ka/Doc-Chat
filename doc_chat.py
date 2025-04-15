@@ -19,7 +19,7 @@ from langsmith import Client
 # Set API keys
 LANGSMITH_ENDPOINT="<https://api.smith.langchain.com>"
 os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
-os.environ["LANGSMITH_TRACING"] = "true"
+os.environ["LANGSMITH_TRACING_V2"] = "true"
 os.environ["LANGSMITH_API_KEY"] = st.secrets["LANGSMITH_API_KEY"]
 os.environ["LANGSMITH_PROJECT"] = st.secrets["LANGSMITH_PROJECT"]
 client = Client(api_url=st.secrets["LANGSMITH_PROJECT"], api_key=st.secrets["LANGSMITH_API_KEY"])
