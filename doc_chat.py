@@ -7,6 +7,7 @@ from langchain_openai import OpenAIEmbeddings
 from langchain_core.vectorstores import InMemoryVectorStore
 from langchain.chat_models import init_chat_model
 from langchain_core.messages import SystemMessage, HumanMessage
+from langchain_community.vectorstores.faiss import DistanceStrategy
 from langchain_core.runnables import chain
 from langchain_core.documents import Document
 from typing import List
@@ -25,7 +26,7 @@ os.environ["LANGSMITH_PROJECT"] = st.secrets["LANGSMITH_PROJECT"]
 model = init_chat_model("gpt-4o-mini", model_provider="openai")
 
 st.title("📘 Chat with Your PDF")
-
+st.link_button(label="Created by Bryce Anthony", url="https://www.linkedin.com/in/bryce-anthony/")
 st.write("Upload a PDF and ask it questions using GPT-4o")
 
 uploaded_file = st.file_uploader("Upload your PDF", type=["pdf"])
